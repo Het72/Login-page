@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4B22A2;
+    padding: 20px;
+    overflow-x: hidden;
+}
+.background{
+        width: 100%;
+        max-width: 1200px;
+        background: white;
+        border-radius: 50px;
+        padding: 50px 30px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.header h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.header p {
+    color: #6200ea;
+    font-size: 16px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+.left {
+    flex: 1;
+    text-align: left;
+}
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    margin-bottom: 20px;
+}
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+.btn {
+    display: block;
+    width: 150px;
+    padding: 12px;
+    border: none;
+    background: #6200ea;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px auto 0;
+}
+.img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.img img {
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+}
+.corners{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #4B22A2;
+    border-radius: 0 100px 0 0;
+    top: 0;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img {
+        display: none;
+    }
+}
